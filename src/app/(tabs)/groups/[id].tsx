@@ -1,40 +1,26 @@
-import { Stack, useLocalSearchParams } from "expo-router"
-import { useMemo } from "react"
-import { StyleSheet, Text, View } from "react-native"
+import { Stack, useLocalSearchParams, useRouter } from "expo-router"
+import { useEffect } from "react"
 
-import { getGroupById, GroupSummary } from "#features/groups"
-import { ScreenHeader } from "#shared/design"
+import { TripDetailScreen, useAppData } from "#features/groups"
 
 const App: React.FC = () => {
   const { id } = useLocalSearchParams<{ id: string }>()
-  const group = useMemo(() => getGroupById(id ?? ""), [id])
+  const { getGroup } = useAppData()
+  const router = useRouter()
+  const group = getGroup(id ?? "")
+
+  useEffect(() => {
+    if (id && !group) {
+      router.replace("/groups")
+    }
+  }, [group, id, router])
 
   return (
     <>
-      <Stack.Screen options={{ title: group?.name ?? "Group" }} />
-
-      <View style={styles.container}>
-        <ScreenHeader title={group?.name ?? "Unknown group"} />
-        {group ? (
-          <GroupSummary group={group} />
-        ) : (
-          <Text style={styles.missing}>Group not found</Text>
-        )}
-      </View>
+      <Stack.Screen options={{ title: group?.name ?? "Trip" }} />
+      <TripDetailScreen groupId={id ?? ""} />
     </>
   )
 }
 
 export default App
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 16,
-    backgroundColor: "#fff",
-  },
-  missing: {
-    color: "#888",
-    fontSize: 16,
-  },
-})

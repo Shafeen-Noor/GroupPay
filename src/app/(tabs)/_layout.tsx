@@ -5,15 +5,6 @@ const Layout: React.FC = () => {
   return (
     <Tabs screenOptions={{ headerShown: false }}>
       <Tabs.Screen
-        name="index"
-        options={{
-          title: "Home",
-          tabBarIcon: ({ color, size }) => (
-            <FontAwesome size={size} name="home" color={color} />
-          ),
-        }}
-      />
-      <Tabs.Screen
         name="groups"
         options={{
           title: "Groups",
@@ -27,10 +18,11 @@ const Layout: React.FC = () => {
         options={{
           title: "Settings",
           tabBarIcon: ({ color, size }) => (
-            <FontAwesome size={size} name="gear" color={color} />
+            <FontAwesome size={size} name="info-circle" color={color} />
           ),
         }}
       />
+      <Tabs.Screen name="index" options={{ href: null }} />
     </Tabs>
   )
 }

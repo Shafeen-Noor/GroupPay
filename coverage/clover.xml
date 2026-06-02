@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1780428432198" clover="3.2.0">
+  <project timestamp="1780428432198" name="All files">
+    <metrics statements="149" coveredstatements="118" conditionals="101" coveredconditionals="50" methods="37" coveredmethods="26" elements="287" coveredelements="194" complexity="0" loc="149" ncloc="149" packages="12" files="27" classes="27"/>
+    <package name="features.groups.lib">
+      <metrics statements="94" coveredstatements="64" conditionals="85" coveredconditionals="39" methods="28" coveredmethods="17"/>
+      <file name="balances.ts" path="/Users/apple/GroupPay/src/features/groups/lib/balances.ts">
+        <metrics statements="20" coveredstatements="19" conditionals="18" coveredconditionals="12" methods="6" coveredmethods="4"/>
+        <line num="6" count="7" type="cond" truecount="1" falsecount="1"/>
+        <line num="8" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="15" count="5" type="stmt"/>
+        <line num="16" count="5" type="cond" truecount="1" falsecount="1"/>
+        <line num="17" count="5" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+        <line num="27" count="7" type="cond" truecount="1" falsecount="1"/>
+        <line num="28" count="7" type="stmt"/>
+        <line num="32" count="3" type="stmt"/>
+        <line num="33" count="4" type="cond" truecount="3" falsecount="1"/>
+        <line num="34" count="4" type="stmt"/>
+        <line num="40" count="3" type="stmt"/>
+        <line num="42" count="3" type="stmt"/>
+        <line num="43" count="9" type="stmt"/>
+        <line num="46" count="3" type="stmt"/>
+        <line num="47" count="3" type="stmt"/>
+        <line num="50" count="9" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+      </file>
+      <file name="expenseFormLogic.ts" path="/Users/apple/GroupPay/src/features/groups/lib/expenseFormLogic.ts">
+        <metrics statements="46" coveredstatements="22" conditionals="44" coveredconditionals="16" methods="13" coveredmethods="6"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="20" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="31" count="2" type="cond" truecount="4" falsecount="0"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="45" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="65" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="66" count="0" type="stmt"/>
+        <line num="69" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="70" count="0" type="stmt"/>
+        <line num="73" count="2" type="stmt"/>
+        <line num="74" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="75" count="0" type="stmt"/>
+        <line num="78" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="79" count="1" type="stmt"/>
+        <line num="85" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="86" count="0" type="stmt"/>
+        <line num="87" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="89" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="90" count="0" type="stmt"/>
+        <line num="97" count="1" type="stmt"/>
+        <line num="110" count="0" type="stmt"/>
+        <line num="111" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="112" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="115" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="116" count="0" type="stmt"/>
+        <line num="119" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="122" count="0" type="stmt"/>
+        <line num="125" count="0" type="stmt"/>
+        <line num="129" count="0" type="stmt"/>
+      </file>
+      <file name="normalizeExpense.ts" path="/Users/apple/GroupPay/src/features/groups/lib/normalizeExpense.ts">
+        <metrics statements="6" coveredstatements="3" conditionals="12" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="6" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="16" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+      </file>
+      <file name="settlements.ts" path="/Users/apple/GroupPay/src/features/groups/lib/settlements.ts">
+        <metrics statements="22" coveredstatements="20" conditionals="11" coveredconditionals="7" methods="8" coveredmethods="6"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="29" count="4" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="38" count="2" type="stmt"/>
+        <line num="39" count="2" type="stmt"/>
+        <line num="41" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="54" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="55" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="58" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="shared.design.foundations">
+      <metrics statements="28" coveredstatements="28" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="colors.ts" path="/Users/apple/GroupPay/src/shared/design/foundations/colors.ts">
+        <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="2" count="9" type="stmt"/>
+        <line num="3" count="9" type="stmt"/>
+        <line num="4" count="9" type="stmt"/>
+        <line num="6" count="9" type="stmt"/>
+        <line num="7" count="9" type="stmt"/>
+        <line num="8" count="9" type="stmt"/>
+        <line num="10" count="9" type="stmt"/>
+        <line num="11" count="9" type="stmt"/>
+        <line num="12" count="9" type="stmt"/>
+        <line num="14" count="9" type="stmt"/>
+        <line num="15" count="9" type="stmt"/>
+        <line num="16" count="9" type="stmt"/>
+      </file>
+      <file name="shadows.ts" path="/Users/apple/GroupPay/src/shared/design/foundations/shadows.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="5" count="3" type="stmt"/>
+      </file>
+      <file name="shapes.ts" path="/Users/apple/GroupPay/src/shared/design/foundations/shapes.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="6" type="stmt"/>
+        <line num="2" count="6" type="stmt"/>
+        <line num="3" count="6" type="stmt"/>
+      </file>
+      <file name="spacing.ts" path="/Users/apple/GroupPay/src/shared/design/foundations/spacing.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="7" type="stmt"/>
+        <line num="2" count="7" type="stmt"/>
+        <line num="3" count="7" type="stmt"/>
+        <line num="4" count="7" type="stmt"/>
+        <line num="5" count="7" type="stmt"/>
+      </file>
+      <file name="typography.ts" path="/Users/apple/GroupPay/src/shared/design/foundations/typography.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="5" count="8" type="stmt"/>
+        <line num="7" count="8" type="stmt"/>
+        <line num="12" count="8" type="stmt"/>
+        <line num="17" count="8" type="stmt"/>
+        <line num="23" count="8" type="stmt"/>
+        <line num="29" count="8" type="stmt"/>
+        <line num="35" count="8" type="stmt"/>
+      </file>
+    </package>
+    <package name="shared.design.layout">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/Users/apple/GroupPay/src/shared/design/layout/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="shared.design.layout.Card">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Card.tsx" path="/Users/apple/GroupPay/src/shared/design/layout/Card/Card.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/apple/GroupPay/src/shared/design/layout/Card/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="shared.design.layout.FormGroup">
+      <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="FormGroup.tsx" path="/Users/apple/GroupPay/src/shared/design/layout/FormGroup/FormGroup.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/apple/GroupPay/src/shared/design/layout/FormGroup/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="shared.design.layout.Screen">
+      <metrics statements="5" coveredstatements="4" conditionals="3" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="Screen.tsx" path="/Users/apple/GroupPay/src/shared/design/layout/Screen/Screen.tsx">
+        <metrics statements="5" coveredstatements="4" conditionals="3" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="24" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/apple/GroupPay/src/shared/design/layout/Screen/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="shared.design.layout.ScreenHeader">
+      <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="ScreenHeader.tsx" path="/Users/apple/GroupPay/src/shared/design/layout/ScreenHeader/ScreenHeader.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/apple/GroupPay/src/shared/design/layout/ScreenHeader/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="shared.design.primitives">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/Users/apple/GroupPay/src/shared/design/primitives/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="shared.design.primitives.Button">
+      <metrics statements="4" coveredstatements="4" conditionals="8" coveredconditionals="6" methods="2" coveredmethods="2"/>
+      <file name="Button.tsx" path="/Users/apple/GroupPay/src/shared/design/primitives/Button/Button.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="8" coveredconditionals="6" methods="2" coveredmethods="2"/>
+        <line num="22" count="5" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="33" count="4" type="stmt"/>
+        <line num="51" count="5" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/apple/GroupPay/src/shared/design/primitives/Button/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="shared.design.primitives.Text">
+      <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="Text.tsx" path="/Users/apple/GroupPay/src/shared/design/primitives/Text/Text.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="13" count="8" type="stmt"/>
+        <line num="22" count="8" type="stmt"/>
+        <line num="27" count="11" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/apple/GroupPay/src/shared/design/primitives/Text/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="shared.design.primitives.TextField">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="TextField.tsx" path="/Users/apple/GroupPay/src/shared/design/primitives/TextField/TextField.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="30" count="5" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/apple/GroupPay/src/shared/design/primitives/TextField/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="shared.design.primitives.ToggleField">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="ToggleField.tsx" path="/Users/apple/GroupPay/src/shared/design/primitives/ToggleField/ToggleField.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="24" count="5" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/apple/GroupPay/src/shared/design/primitives/ToggleField/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+  </project>
+</coverage>

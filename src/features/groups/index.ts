@@ -1,4 +1,4 @@
-export { GroupCard } from "./components/GroupCard"
-export { GroupSummary } from "./components/GroupSummary"
-export { GroupsList } from "./components/GroupsList"
-export { getGroupById, mockGroups } from "./data/mockGroups"
+export { AppDataProvider, useAppData } from "./hooks/useAppData"
+export { TripsScreen } from "./screens/TripsScreen"
+export { TripDetailScreen } from "./screens/TripDetailScreen"
+export type { AppData, BalanceRow, Expense, Group, Participant } from "./types"

@@ -8,6 +8,7 @@ const config: KnipConfiguration = {
     "coverage/**",
     "src/shared/design/foundations/index.ts",
   ],
+  ignoreBinaries: ["eas-cli"],
   ignoreDependencies: ["expo-updates", "expo-system-ui", "expo-modules-core"],
   ignoreIssues: {
     "src/shared/**": ["exports", "types"],

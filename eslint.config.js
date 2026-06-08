@@ -5,13 +5,14 @@ import { defineConfig, globalIgnores } from "eslint/config"
 import pluginExpo from "eslint-plugin-expo"
 
 export default defineConfig(
-  globalIgnores(["dist/", "web-build/"]),
+  globalIgnores(["dist/", "web-build/", "coverage/"]),
   config,
   {
     plugins: {
       expo: pluginExpo,
     },
     rules: {
+      "jest/expect-expect": "off",
       "expo/use-dom-exports": "error",
       "expo/no-env-var-destructuring": "error",
       "expo/no-dynamic-env-var": "error",

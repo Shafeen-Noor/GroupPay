@@ -22,6 +22,7 @@ import {
 type AppDataApi = {
   data: AppData
   loading: boolean
+  reload: () => Promise<void>
   addGroup: (name: string, category: string, color: string) => Promise<Group>
   removeGroup: (groupId: string) => Promise<void>
   addParticipant: (groupId: string, name: string) => Promise<void>
@@ -46,12 +47,15 @@ export function AppDataProvider({
   const [data, setData] = useState<AppData>({ groups: [] })
   const [loading, setLoading] = useState(true)
 
-  useEffect(() => {
-    void (async () => {
-      setData(await loadAppData())
-      setLoading(false)
-    })()
+  const reload = useCallback(async () => {
+    setLoading(true)
+    setData(await loadAppData())
+    setLoading(false)
   }, [])
+
+  useEffect(() => {
+    void reload()
+  }, [reload])
 
   const getGroup = useCallback(
     (groupId: string) => data.groups.find((group) => group.id === groupId),
@@ -175,6 +179,7 @@ export function AppDataProvider({
     () => ({
       data,
       loading,
+      reload,
       addGroup,
       removeGroup,
       addParticipant,
@@ -186,6 +191,7 @@ export function AppDataProvider({
     [
       data,
       loading,
+      reload,
       addGroup,
       removeGroup,
       addParticipant,

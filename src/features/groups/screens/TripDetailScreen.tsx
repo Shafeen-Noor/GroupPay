@@ -5,9 +5,12 @@ import { AppText, Button } from "#design/primitives"
 
 import { BalanceList } from "../components/BalanceList"
 import { ExpenseFormView } from "../components/ExpenseFormView"
+import { ExpenseHistoryList } from "../components/ExpenseHistoryList"
 import { ParticipantFormView } from "../components/ParticipantFormView"
 import { SettlementList } from "../components/SettlementList"
 import { useAppData } from "../hooks/useAppData"
+import { useExpenseHistory } from "../hooks/useExpenseHistory"
+import { useShareTripSummary } from "../hooks/useShareTripSummary"
 import { useTripDetail } from "../hooks/useTripDetail"
 import { type Group } from "../types"
 
@@ -22,6 +25,12 @@ const TripDetailContent: React.FC<{ group: Group }> = ({ group }) => {
     removePerson,
     removeExpenseById,
   } = useTripDetail(group)
+  const history = useExpenseHistory(group)
+  const { share } = useShareTripSummary(
+    group,
+    finance.balances,
+    finance.settlements,
+  )
 
   return (
     <Screen>
@@ -50,8 +59,20 @@ const TripDetailContent: React.FC<{ group: Group }> = ({ group }) => {
         />
       </Card>
 
+      <Card>
+        <AppText variant="heading">Expense history by category</AppText>
+        <ExpenseHistoryList group={group} history={history} />
+      </Card>
+
       <BalanceList balances={finance.balances} total={finance.total} />
       <SettlementList settlements={finance.settlements} />
+
+      <Button
+        label="Share settlement summary"
+        onPress={() => {
+          void share()
+        }}
+      />
 
       <Button
         label="Delete this trip"
